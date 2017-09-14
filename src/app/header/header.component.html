@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Store</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/home">Main</a>
+      </li> 
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/cart">Cart</a>
+      </li>
+    </ul>
+     <ul class="navbar-nav navbar-right">
+      <li class="nav-item cart"> 
+        <div class="row">
+          <div class="col-sm-6"> 
+            <span>In the cart</span>
+          </div> 
+           <div class="col-sm-6">
+            <span style="font-weight: bold;">{{ quantity }} items</span>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-sm-6"> 
+            <span>Total </span>
+          </div> 
+          <div class="col-sm-6">
+            <span style="font-weight: bold;">{{ total | number:'1.2-2' }}</span>
+          </div>
+        </div>
+      </li>
+    </ul> 
+  </div>
+
+</nav>

@@ -1,0 +1,12 @@
+.item-image {
+  max-width: 300px;
+}
+
+.item-price {
+  font-weight: bold;
+  text-align: center;
+}
+
+.item-name {
+    text-align: center;
+}

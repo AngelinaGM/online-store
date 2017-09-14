@@ -1,0 +1,12 @@
+<div class="item-image">
+  <img 
+      class="card-img-top img-responsive" 
+      [src]="item.imgPath"
+      alt="{{ item.name }}"> 
+</div>
+<div class="item-name">{{item.name}}</div>
+<div class="item-price">{{ item.price }}</div>
+<div style="text-align:center">  
+  <button class="btn btn-secondary" (click)="onSelected()" style="cursor: pointer;"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> add to cart</button>
+</div>
+

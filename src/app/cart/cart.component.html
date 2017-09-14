@@ -1,0 +1,22 @@
+
+<div class="container">
+  <app-cart-item
+*ngFor="let item of cartInventory; let ind = index"
+[item]="item.item"
+ [quantity]="item.quantity" 
+(itemSelected)="deleteItem(ind)"
+(quantityChanged)="changeQuantity($event)"></app-cart-item>
+
+
+  <div *ngIf="cartInventory.length === 0">
+  <h2>Your cart is empty</h2>
+</div>     
+ <div *ngIf="cartInventory.length > 0"> 
+   <hr>
+  <div class="row float-right">
+    <h4>Total {{ total | number:'1.2-2' }}</h4>
+  </div> 
+ </div> 
+
+</div>
+  

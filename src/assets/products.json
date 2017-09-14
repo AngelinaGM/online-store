@@ -1,0 +1,57 @@
+[
+    {
+        "product_id": "1",
+        "name": "iPhone 6 (32Gb)",
+        "price": "100",
+        "description": "It's iphone 5s",
+        "imagePath": "https://www.o2.co.uk/shop/homepage/images/shop15/brand/apple/iphone-6/apple-iphone-6-2016-ios-10-gallery-img-2-101016.jpg"
+    },
+    {
+        "product_id": "2",
+        "name": "iPhone 6",
+        "price": "230",
+        "description": "It's iphone 6",
+        "imagePath": "https://www.o2.co.uk/shop/homepage/images/shop15/brand/apple/iphone-6/apple-iphone-6-2016-ios-10-gallery-img-2-101016.jpg"
+
+    },
+    {
+        "product_id": "3",
+        "name": "iPhone 7",
+        "price": "350",
+        "description": "Gold iphone",
+        "imagePath": "https://www.o2.co.uk/shop/homepage/images/shop15/brand/apple/iphone7/apple-iphone-7-gallery-img-5.jpg"
+
+    },
+    {
+        "product_id": "4",
+        "name": "Samsung Galaxy S6",
+        "price": "200",
+        "description": "It's samsung s6",
+        "imagePath": "http://s7d2.scene7.com/is/image/SamsungUS/Pdpkeyfeature-sm-g920azdaatt-600x600-C1-062016?$product-details-jpg$"
+
+    },
+    {
+        "product_id": "5",
+        "name": "Samsung Galaxy S7",
+        "price": "250",
+        "description": "It's samsung s7",
+        "imagePath": "http://s7d2.scene7.com/is/image/SamsungUS/Pdpkeyfeature-sm-g935azsaatt-600x600-C1-062016?$product-details-jpg$"
+
+    },
+    {
+        "product_id": "6",
+        "name": "Samsung Galaxy S8",
+        "price": "300",
+        "description": "It's samsung s8",
+        "imagePath": "http://s7d2.scene7.com/is/image/SamsungUS/S8_Black_front?$product-details-jpg$"
+
+    },
+    {
+        "product_id": "7",
+        "name": "iPhone 8",
+        "price": "450",
+        "description": "lalalala",
+        "imagePath": "https://www.theinquirer.net/w-images/1c116b49-3262-4407-bda4-c614bdb32549/4/iPhone8inCopperGold-580x358.jpeg"
+
+    }
+]
