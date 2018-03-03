@@ -2,8 +2,8 @@
 
 This is project for simple online store
 
-## After pull
+## After clone
 
->run npm install
+>npm install
 
->run ng serve
+>ng serve
