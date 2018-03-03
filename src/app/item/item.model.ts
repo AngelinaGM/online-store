@@ -3,7 +3,6 @@ export class Item {
     name: string;
     price: number;
     imgPath: string;
-    // quantity: number;
 
     constructor(id?: number, name?: string, price?: number, imgPath?: string) {
         if (id) {

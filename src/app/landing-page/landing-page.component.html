@@ -1,41 +1,8 @@
-  <popup (confirmClick)="addItemToCart()" class="my">
-  <form class="form-horizontal">
-    <div class="row">
-      <div class="col-xs-6">
-        <img 
-          [src]="getSelectItemImg()"
-          alt="item image" 
-          class="img-responsive" style="max-height: 200px;">
-      </div>
-
-      <div class="col-xs-6">
-         <h4>{{ selectedItem.name }}</h4> 
-        
-        <div class="form-group">
-            <label for="selectQuantity">Amount</label>
-
-            <select class="custom-select" id="selectQuantity" [(ngModel)]="quantity" name="quantity" (change)="onChangeQuantity()">
-            <option selected value="1">1 </option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>          
-        </div>
-
-        <h4>{{ price }}</h4>
-        
-      </div>
-    </div>
-  </form>
-</popup> 
-
-
 <div class="container">
   <div class="list-items">
   <div class="list-item" *ngFor="let item of items">
   <app-item
-    [item]="item"
-    (itemSelected)="selectItem(item)"></app-item>
+    [item]="item"></app-item>
 </div>
 
 </div>

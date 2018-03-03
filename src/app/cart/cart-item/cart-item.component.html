@@ -1,27 +1,35 @@
-<div class="row align-items-end">
+<div class="row align-items-end item">
   <div class="col-sm-4">
     <img 
       class="img-responsive" style="max-width: 300px;"
       [src]="item.imgPath"
       alt="{{ item.name }}"> 
   </div>
-  <div class="col-sm-4">
-    <div class="float-right">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-3">
       <p>{{item.name}}</p>
       <h6>Price: {{ item.price }}</h6>
 
-      <div class="form-group">
-        <label for="selectQuantity">Amount</label>
+      
 
-        <select class="custom-select" id="selectQuantity" [(ngModel)]="quantity" name="quantity" (change)="onChangeQuantity()">
-          <option selected value="1">1 </option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>          
+      <div class="form-group">
+          <div class="row">
+            <div class="col-sm-8">
+              <label for="selectQuantity">Amount</label>
+            </div>
+            <div class="col-sm-4">
+                <select class="custom-select" id="selectQuantity" [(ngModel)]="quantity" name="quantity" (change)="onChangeQuantity()">
+                    <option selected value="1">1 </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>          
+            </div>
+          </div>
+
+        
       </div>
 
       <button class="btn btn-secondary" (click)="onRemove()" style="cursor: pointer;"> <i class="fa fa-trash" aria-hidden="true"></i> remove</button>
-    </div>     
   </div>
 </div>

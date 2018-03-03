@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Popup} from 'ng2-opd-popup';
+// import {Popup} from 'ng2-opd-popup';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,6 @@ import {Popup} from 'ng2-opd-popup';
 export class AppComponent {
   title = 'app works!';
 
-  constructor(private popup:Popup) { }
+  // constructor(private popup:Popup) { }
 
 }

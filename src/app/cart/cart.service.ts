@@ -4,24 +4,19 @@ import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class CartService {
-    items: Item[] = [];
+    // items: Item[] = [];
     inventory: {item: Item, quantity: number}[] = [];
     itemsChanged = new Subject<{item: Item, quantity: number}[]>();
 
-    addItem(item: Item, quantity: number) {
-        let ind = this.items.indexOf(item);
+    addItem(item: Item) {
+        let ind = this.inventory.map(el => {return el.item.id}).indexOf(item.id);
 
         if (ind >= 0 ) {
-            this.inventory[ind].quantity += +quantity;
+            this.inventory[ind].quantity += 1;
         } else {
-           this.items.push(item);
-           this.inventory.push({item: item, quantity: quantity});
+           this.inventory.push({item: item, quantity: 1});
         }
         this.itemsChanged.next(this.inventory.slice());
-    }
-
-    getItems() {
-        return this.items.slice();
     }
 
     getInventory() {
@@ -29,7 +24,6 @@ export class CartService {
     }
 
     deleteItem(index: number) {
-        this.items.splice(index, 1);
         this.inventory.splice(index, 1);
         this.itemsChanged.next(this.inventory.slice());
     }
